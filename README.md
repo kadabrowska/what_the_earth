@@ -1,1 +1,2 @@
-# what_the_earth
+# Earth
+A small slide gallery with a space-like background. 
