@@ -1,2 +1,2 @@
 # what_the_earth
-A small slide gallery with a space-like background. 
+A small slide gallery with a galaxy-like background. 
