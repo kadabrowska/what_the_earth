@@ -1,0 +1,140 @@
+.background {
+    margin: 0;
+    padding: 0;
+}
+.description {
+    font-size: 25px;
+    font-family: 'Amatic SC', cursive;
+    margin-top: 3em;
+    margin-right: 500px;
+    margin-left: 500px;
+    text-align: center;
+    color: whitesmoke;
+    display: block;
+    z-index: 3;
+    position: relative;
+}
+
+.stars, .twinkling {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.stars {
+    background: black url("background items/stars.png") repeat top center;
+    z-index: 1;
+}
+
+.twinkling {
+    background: transparent url("background items/twinkling.png") repeat top center;
+    z-index: 1;
+    animation: move-twinkle-back 200s linear infinite;
+}
+
+@keyframes move-twinkle-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+.box {
+    width: 1000px;
+    height: 400px;
+    text-align: center;
+    border: 3px black;
+    position: relative;
+    z-index: 3;
+    margin: auto;
+
+}
+
+button {
+  z-index: 3;
+    padding:0.35em 1.2em;
+    border:0.2em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:500;
+    color:whitesmoke;
+    text-align:center;
+    transition: all 0.1s;
+
+}
+button:hover{
+    color:black;
+    background-color: whitesmoke;
+}
+.prev {
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: 15px;
+}
+.next{
+    margin-left: 20px;
+    margin-top: 5px;
+    padding: 15px;
+}
+
+.slideshow {
+    z-index: 3;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    filter: grayscale(30%);
+    transform: scale(1.1);
+    transition: 1s;
+
+}
+.slideshow ul {
+    list-style: none;
+    vertical-align: middle;
+}
+.slideshow li {
+    display: none;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.slideshow .visible{
+    display: inline-block;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes bouncy { 0%{top:0em}
+    40%{top:0em}
+    43%{top:-0.9em}
+    46%{top:0em}
+    48%{top:-0.4em}
+    50%{top:0em}
+    100%{top:0em;}
+}
