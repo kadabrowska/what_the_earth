@@ -1,8 +1,8 @@
 # A little practice of js
 ## what_the_earth
 ###### A small slide gallery with a galaxy-like background.
-Background - html and css.
-Slide gallery - javascript.
+###### Background - html and css.
+###### Slide gallery - javascript.
 
 
 
